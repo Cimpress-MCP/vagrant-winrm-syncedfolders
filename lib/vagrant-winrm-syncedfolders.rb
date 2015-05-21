@@ -4,7 +4,6 @@ require "vagrant-winrm-syncedfolders/plugin"
 
 module VagrantPlugins
   module SyncedFolderWinRM
-
     # This returns the path to the source of this plugin.
     #
     # @return [Pathname]

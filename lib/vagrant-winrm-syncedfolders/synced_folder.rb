@@ -12,15 +12,15 @@ module VagrantPlugins
         @logger = Log4r::Logger.new("vagrant::synced_folders::winrm")
       end
 
-      def usable?(machine, raise_error=false)
+      def usable?(machine, _raise_error = false)
         machine.config.vm.communicator == :winrm
       end
 
-      def prepare(machine, folders, opts)
+      def prepare(_machine, _folders, _opts)
       end
 
-      def enable(machine, folders, nfsopts)
-        folders.each do |id, data|
+      def enable(machine, folders, _nfsopts)
+        folders.each do |_id, data|
           hostpath  = File.expand_path(data[:hostpath], machine.env.root_path)
           guestpath = data[:guestpath]
 
@@ -39,7 +39,7 @@ module VagrantPlugins
         end
       end
 
-      def cleanup(machine, opts)
+      def cleanup(_machine, _opts)
       end
     end
   end
