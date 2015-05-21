@@ -1,0 +1,24 @@
+AllCops:
+  Exclude:
+    - '*.gemspec'
+
+Metrics/LineLength:
+  Max: 120
+
+Metrics/ClassLength:
+  Max: 150
+
+Style/Documentation:
+  Enabled: false
+
+Metrics/MethodLength:
+  Max: 20
+
+StringLiterals:
+  EnforcedStyle: double_quotes
+
+Style/FileName:
+  Enabled: false
+
+Metrics/AbcSize:
+  Max: 100
