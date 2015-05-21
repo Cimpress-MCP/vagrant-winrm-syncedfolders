@@ -22,6 +22,8 @@ It is also possible to force a synced folder to use the WinRM:
 
 ## Contributing
 
+In ordr to run this locally, the Vagrantfile is set to use the [boxcutter](https://github.com/boxcutter/windows)/eval-win7x86-enterprise box. If you don't already have this installed, here are some [instructions](https://github.com/tknerr/vagrant-managed-servers/pull/48)
+
 1. Fork it ( https://github.com/Cimpress-MCP/vagrant-winrm-syncedfolders/fork )
 2. Create your feature branch (`git checkout -b my-new-feature`)
 3. Commit your changes (`git commit -am 'Add some feature'`)
