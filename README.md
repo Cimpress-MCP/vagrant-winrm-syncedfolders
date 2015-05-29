@@ -12,7 +12,7 @@ Vagrant plugin that allows you to use WinRM as a folder synchronization mechanis
 
 Upon installation of this plugin the priority order of synced folders for Windows guests will be as follows:
 
-  - SMB
+  - SMB (Windows only)
   - WinRM
   - Rsync
 
