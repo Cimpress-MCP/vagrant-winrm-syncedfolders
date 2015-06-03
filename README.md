@@ -1,6 +1,6 @@
 # vagrant-winrm-syncedfolders
 
-Vagrant plugin that allows you to use WinRM as a folder synchronization mechanism.
+vagrant-winrm-syncedfolders is a Vagrant plugin that allows you to use WinRM as a folder synchronization mechanism.
 
 *Limitations:* The WinRM communicator that is used to perform the folder synchronization is known to be slow for large numbers of files.
 
@@ -12,11 +12,11 @@ Vagrant plugin that allows you to use WinRM as a folder synchronization mechanis
 
 Upon installation of this plugin the priority order of synced folders for Windows guests will be as follows:
 
-  - SMB
+  - SMB (Windows host only)
   - WinRM
   - Rsync
 
-It is also possible to force a synced folder to use the WinRM:
+It is also possible to force a synced folder to use the WinRM folder sync:
 
     config.vm.synced_folder ".", "/vagrant", type: "winrm"
 
