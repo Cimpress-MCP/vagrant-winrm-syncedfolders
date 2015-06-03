@@ -8,7 +8,7 @@ Gem::Specification.new do |spec|
   spec.version       = VagrantPlugins::SyncedFolderWinRM::VERSION
   spec.authors       = ["Christopher Baldauf"]
   spec.email         = ["cbaldauf@cimpress.com"]
-  spec.summary       = %q{Use WinRM synced folders for Windows guests using the WinRM communcator}
+  spec.summary       = "Use WinRM synced folders for Windows guests using the WinRM communcator"
   spec.homepage      = "https://github.com/Cimpress-MCP/vagrant-winrm-syncedfolders"
   spec.license       = "Apache 2.0"
 
