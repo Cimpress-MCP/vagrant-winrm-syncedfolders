@@ -1,5 +1,4 @@
 require "pathname"
-
 require "vagrant-winrm-syncedfolders/plugin"
 
 module VagrantPlugins
