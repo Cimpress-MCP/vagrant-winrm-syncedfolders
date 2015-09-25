@@ -2,11 +2,21 @@
 
 vagrant-winrm-syncedfolders is a Vagrant plugin that allows you to use WinRM as a folder synchronization mechanism.
 
-*Limitations:* The WinRM communicator that is used to perform the folder synchronization is known to be slow for large numbers of files.
+*Limitations:* The WinRM communicator that is used to perform the folder synchronization is known to be slow for large directories.
 
 ## Installation
 
+*Note:* vagrant-winrm-syncedfolders versions 1.0.0 and later *only* supports
+Vagrant 1.7.4 and later, due to an issue with the version of `winrm-fs`
+bundled with the installer.
+
+Vagrant 1.7.4 users can install this plugin via:
+
     vagrant plugin install vagrant-winrm-syncedfolders
+
+Vagrant 1.7.2 users will need to continue using an old version of the plugin via:
+
+    vagrant plugin install vagrant-winrm-syncedfolders --plugin-version 0.1.0
 
 ## Usage
 
