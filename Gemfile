@@ -4,7 +4,7 @@ source "https://rubygems.org"
 gemspec
 
 group :development do
-  gem "vagrant", git: "https://github.com/mitchellh/vagrant.git", ref: "v1.7.4"
+  gem "vagrant", git: "https://github.com/mitchellh/vagrant.git", ref: "v1.8.4"
 end
 
 group :plugins do
