@@ -23,7 +23,7 @@ module VagrantPlugins
         folders.each do |_id, data|
           hostpath  = File.expand_path(data[:hostpath], machine.env.root_path)
           guestpath = data[:guestpath]
-          sync machine, hostpath, guestpath
+          sync machine, hostpath.to_s, guestpath
         end
       end
 
