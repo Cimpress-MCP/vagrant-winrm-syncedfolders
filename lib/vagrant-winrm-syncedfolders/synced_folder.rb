@@ -16,8 +16,7 @@ module VagrantPlugins
         machine.config.vm.communicator == :winrm
       end
 
-      def prepare(_machine, _folders, _opts)
-      end
+      def prepare(_machine, _folders, _opts); end
 
       def enable(machine, folders, _nfsopts)
         folders.each do |_id, data|
@@ -27,8 +26,7 @@ module VagrantPlugins
         end
       end
 
-      def cleanup(_machine, _opts)
-      end
+      def cleanup(_machine, _opts); end
 
       private
 
